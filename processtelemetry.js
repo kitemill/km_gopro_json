@@ -11,7 +11,7 @@ if (process.argv.length < 3) {
 
 const videoFilePath = process.argv[2];
 
-console.log('Input video file path:', videoFilePath);
+// console.log('Input video file path:', videoFilePath);
 
 // Create a readable stream from the video file
 const readStream = fs.createReadStream(videoFilePath);
