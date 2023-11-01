@@ -11,8 +11,8 @@ This script extracts and processes telemetry data from a GoPro video file using 
 
 1. Clone this repository
    ```bash
-   git clone <repository_url>
-   cd <repository_directory>
+   git clone https://github.com/kitemill/km_gopro_json.git
+   cd km_gopro_json
    ```
 
 2. Install the required packages:
