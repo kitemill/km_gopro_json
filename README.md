@@ -31,8 +31,7 @@ node processtelemetry.js <video file along with the path>
 ## Example
 
 ```
-km_gopro_json (main *) % node processtelemetry.js /Users/tallakt/Downloads/snorlax_gopro_max/GS012799.MP4 | head -n 30
-Input video file path: /Users/tallakt/Downloads/snorlax_gopro_max/GS012799.MP4
+km_gopro_json (main *) % node processtelemetry.js /Users/tallakt/Downloads/snorlax_gopro_max/GS012799.MP4
 {
   "1": {
     "streams": {
