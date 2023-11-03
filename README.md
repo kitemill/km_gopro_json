@@ -31,7 +31,7 @@ $ processtelemetry <video file along with the path>
 ## Example
 
 ```
-$ node processtelemetry.js /Users/tallakt/Downloads/snorlax_gopro_max/GS012799.MP4
+$ processtelemetry /Users/tallakt/Downloads/snorlax_gopro_max/GS012799.MP4
 {
   "1": {
     "streams": {
