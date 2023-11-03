@@ -17,7 +17,7 @@ This script extracts and processes telemetry data from a GoPro video file using 
 
 2. Install the required packages:
    ```bash
-   npm install
+   npm install -g
    ```
 
 ## Usage
@@ -25,7 +25,7 @@ This script extracts and processes telemetry data from a GoPro video file using 
 Run the script using the following command:
 
 ```bash
-node processtelemetry.js <video file along with the path>
+$ processtelemetry <video file along with the path>
 ```
 
 ## Example
