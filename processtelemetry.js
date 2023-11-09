@@ -9,12 +9,17 @@ if (process.argv.length < 3) {
   process.exit(1);
 }
 
+
+
 const videoFilePath = process.argv[2];
 
-// console.log('Input video file path:', videoFilePath);
+//console.log('Input video file path:', videoFilePath);
+
 
 // Create a readable stream from the video file
 const readStream = fs.createReadStream(videoFilePath);
+
+
 
 // Collect chunks of data from the stream
 const chunks = [];
@@ -30,14 +35,10 @@ readStream.on('end', () => {
   .then((gpmfData) => {
     return goproTelemetry(gpmfData, { simple: true });
   })
-    .then((telemetryData) => {
-      // Convert BigInt values to strings
-      const sanitizedTelemetryData = JSON.parse(JSON.stringify(telemetryData, (key, value) =>
-        typeof value === 'bigint'
-          ? value.toString()
-          : value
-      ));
-      console.log(JSON.stringify(sanitizedTelemetryData, null, 2));
+  .then((telemetryData) => {
+	  tmp = telemetryData["1"]["streams"]["GPS5"]["samples"];
+	  timestamps = tmp.map((x) => (new Date(x["date"])).getTime());
+	  console.log(JSON.stringify(timestamps, null, 2));
     })
     .catch((err) => {
       console.error('Error processing GPMF data:', err);
