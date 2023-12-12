@@ -7,6 +7,11 @@ This script extracts and processes telemetry data from a GoPro video file using 
 1. Node.js
 2. npm (Node Package Manager)
 
+If you are using Linux you should install nodejs and npm from the NodeSource
+repository as descibed on
+https://github.com/nodesource/distributions
+. Node version 20 was installed.
+
 ## Installation
 
 1. Clone this repository
@@ -17,7 +22,8 @@ This script extracts and processes telemetry data from a GoPro video file using 
 
 2. Install the required packages:
    ```bash
-   npm install -g
+   npm install
+   sudo npm install -g
    ```
 
 ## Usage

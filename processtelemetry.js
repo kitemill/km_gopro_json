@@ -5,7 +5,7 @@ const goproTelemetry = require('gopro-telemetry');
 const fs = require('fs');
 
 if (process.argv.length < 3) {
-  console.error('Usage: node processTelemetry.js <input_video_path>');
+  console.error('Usage: processtelemetry <input_video_path>');
   process.exit(1);
 }
 
